@@ -7,7 +7,7 @@ import axios from 'axios';
 import styles from './styles';
 import { useNavigation } from '@react-navigation/native';
 
-const MAX_SENSORS = 15; // Defina o número máximo de sensores a serem exibidos
+const MAX_SENSORS = 15; 
 
 export default function Home() {
   const initialRegion = {

@@ -38,14 +38,14 @@ export default function SignIn() {
             navigation.navigate("home");
         } catch (error) {
             if (error.response) {
-                // O servidor retornou um status diferente de 200 com dados
+                
                 console.log("Erro de resposta:", error.response.data);
                 console.log("Status do erro:", error.response.status);
             } else if (error.request) {
-                // A requisição foi feita, mas não houve resposta
+                
                 console.log("Não houve resposta do servidor:", error.request);
             } else {
-                // Algo aconteceu durante a configuração da requisição que gerou um erro
+                
                 console.log("Erro ao configurar a requisição:", error.message);
             }
             console.log("Erro geral:", error);

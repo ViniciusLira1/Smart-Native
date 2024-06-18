@@ -15,7 +15,7 @@ export default function SignUp() {
     const navigation = useNavigation();
 
     useEffect(() => {
-        // Salvar o token no AsyncStorage se ele estiver disponível
+        
         if (token != null) {
             AsyncStorage.setItem('token', token)
                 .then(() => {
